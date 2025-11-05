@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chat - CampusBay</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="container">
+      <a href="index.html" class="logo">Campus<span>Bay</span></a>
+      <nav class="nav-links">
+        <a href="listings.html" class="btn btn-secondary">My Listings</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="chat-layout">
+      <aside class="chat-sidebar">
+        <div class="chat-search">
+          <input type="text" placeholder="Search chats...">
+        </div>
+        <div class="chat-list">
+          <div class="chat-list-item active">
+            <img class="avatar" src="https://via.placeholder.com/50x50.png?text=User" alt="avatar">
+            <div class="chat-list-item-info">
+              <div class="name">Rohan Gupta</div>
+              <div class="preview">Discrete Mathematics...</div>
+            </div>
+          </div>
+          <div class="chat-list-item">
+            <img class="avatar" src="https://via.placeholder.com/50x50.png?text=User" alt="avatar">
+            <div class="chat-list-item-info">
+              <div class="name">Priya S.</div>
+              <div class="preview">Is the mini-fridge still...</div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <section class="chat-window">
+        <div class="chat-header">
+          Chat with Rohan Gupta (re: Discrete Maths Textbook)
+        </div>
+        
+        <div class="chat-messages" id="chat-messages">
+          <div class="message received">
+            <div class="message-bubble">
+              Hi — is the book still available? Can we meet tomorrow evening near the library?
+            </div>
+            <span class="timestamp">10:30 AM</span>
+          </div>
+          
+          <div class="message sent">
+            <div class="message-bubble">
+              Hey! Yes, it is. Tomorrow at 5 PM near the library works for me.
+            </div>
+            <span class="timestamp">10:32 AM</span>
+          </div>
+        </div>
+        
+        <form class="chat-input" id="chat-form">
+          <input type="text" id="chat-input-field" placeholder="Type your message..." autocomplete="off">
+          <button type="submit" class="btn btn-primary">Send</button>
+        </form>
+      </section>
+    </div>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
