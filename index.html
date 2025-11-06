@@ -390,15 +390,50 @@
 
     <main>
         <!-- ======================= HERO SECTION ======================= -->
-        <section class="hero">
-            <!-- Content is back inside the main hero div -->
-            <h1>Buy, Sell, & Swap on <span class="highlight">Campus.</span></h1>
-            <p>
-                The official marketplace for your college. Find cheap textbooks, sell your old gadgets, and trade notes with verified students from your own campus.
-            </p>
-            <!-- This button links to the marketplace page -->
-            <a href="marketplace.html" class="cta-button">Explore Marketplace &rarr;</a>
-        </section>
+<section class="hero" style="
+    position: relative;
+    background: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1600&q=80') 
+    no-repeat center center/cover;
+    text-align: center;
+    padding: 120px 20px;
+    border-radius: 15px;
+    overflow: hidden;
+    color: white;
+">
+    <!-- Overlay for better contrast -->
+    <div style="
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        background: rgba(0, 0, 0, 0.4);
+        z-index: 0;
+    "></div>
+
+    <!-- Content -->
+    <div style="position: relative; z-index: 1;">
+        <h1 style="font-size: 3rem; margin-bottom: 25px; color: #ffffff; font-weight: 700;">
+            Buy, Sell, & Swap on <span class="highlight" style="color: orange;">Campus.</span>
+        </h1>
+        <p style="font-size: 1.3rem; max-width: 700px; margin: 0 auto 35px; color: #ffffff; line-height: 1.6;">
+            The official marketplace for your college. Find cheap textbooks, sell your old gadgets, and trade notes with verified students from your own campus.
+        </p>
+        <a href="marketplace.html" class="cta-button" style="
+            background-color: orange;
+            color: white;
+            padding: 14px 35px;
+            border-radius: 10px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+        ">
+            Explore Marketplace &rarr;
+        </a>
+    </div>
+</section>
+
+
+
 
         <!-- ======================= HOW IT WORKS ======================= -->
         <section class="how-it-works container">
